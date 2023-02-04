@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 01 | Encriptador Alura</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <main>
+        <div class="caja-encriptador">
+            <img src="imagenes/Logo.png" alt="Logo de Alura" class="imagen-logo">
+            
+            <div class="contenedor-txtentrada" spellcheck="false">
+                <textarea id="txt-entrada" placeholder="Ingrese el texto aqui" onkeyup="reemplazar(this)"></textarea>
+            </div>   
+    
+            <div class="contenedor-txtresultado">
+                <textarea id="txt-resultado" readonly></textarea>
+                <div id="contenedor-munheco">
+                    <img src="imagenes/Muñeco.png" alt="Muñeco" class="imagen-munheco">
+                    <p class="msj1">Ningún mensaje fue encontrado</p>
+                    <p class="msj2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="contenedor-btnCopiar">            
+                   <button class="btn-copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+            <div class="contenedor-aviso">
+                <img class="img-exclamacion" src="imagenes/Exclamation.png" alt="Icono de exclamacion">
+                <p class="parrafo-aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor-botones">
+                <button id="btn-encriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button id="btn-desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="contenedor-footer">
+            <p>Renzo Ahuite | 2023
+            </p>
+            <a href="https://www.linkedin.com/in/renzo-ahuite-da-costa-dev/" target="_blank"><img src="imagenes/1377213.png"></a>
+            <a href="https://github.com/RenzoAD" target="_blank"><img src="imagenes/270798.png"></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
